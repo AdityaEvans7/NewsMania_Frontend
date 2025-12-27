@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SearchBar from "./SearchBar";
+import SearchBar from "./Searchbar";
 
 const NewsContainer = () => {
   const [newsItems, setNewsItems] = useState([]);
