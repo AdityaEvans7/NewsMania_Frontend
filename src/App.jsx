@@ -12,7 +12,7 @@ import NewspaperPage from "./pages/NewsPaperPage";
 import CategoryNews from "./pages/CategoryNews";
 import FullArticle from "./pages/FullArticle";
 import TrendingNews from "./components/ScrollingNews";
-import Searchbar from "./components/SearchBar";
+import Searchbar from "./components/Searchbar";
 
 function App() {
   const [user, setUser] = useState(() => {
