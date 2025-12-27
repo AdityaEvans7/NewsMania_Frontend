@@ -12,7 +12,7 @@ const NewsContainer = () => {
 
     try {
       const q = query ? `?query=${encodeURIComponent(query)}` : "";
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/news${q}`);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/news/${id}`);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       const articles = Array.isArray(data) ? data : data.news || data.articles || [];
